@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="icon" type="image/png" href="../../photo/icon-for-header.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* استدعاء خط مميز */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background: #F4F7FE;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* تنسيق الروابط كأزرار */
+.li-lo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #2F5393;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* التأثير عند تمرير الماوس */
+.li-lo:hover {
+    background: #1C3C73;
+    transform: scale(1.05);
+}
+
+/* الأيقونات داخل الأزرار */
+.li-lo i {
+    font-size: 22px;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 500px) {
+    .li-lo {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 99vw;
+    height: 9vh;
+    padding: 0.6rem;
+    box-shadow: 1px 9px 11px rgba(0, 0, 0, 0.1);
+    border-bottom: solid 1px #5ba3ac;
+    margin-bottom: 5rem;
+}
+.icon-nav{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    justify-content: space-between;
+    width: 100%;
+}
+.icon-nav .icon-btn{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.icon-nav .icon-btn i{
+    font-size: 1.2rem;
+}
+.icon-nav .icon-btn-order a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    background: #2f5393;
+    padding: 0.7rem;
+    border-radius: 10px;
+    gap: 5px;
+}
+.icon-nav .icon-btn-order i{
+    font-size: 1.2rem;
+}
+.icon-nav .icon-btn-order p{
+    font-size: 1.5vw;
+    color: #fff;
+}
+.navbar .nav-img{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+    </style>
+</head>
+<body>
+    <navbar class="navbar">
+        <div class="icon-nav">
+            <div class="nav-img">
+                <h3>مـجـمـع الـشـاطـبـي</h3>
+                <img src="../photo/or-icon.png" alt="" style="width: 3.5rem;">
+            </div>
+            <div style="    display: flex; flex-direction: row; gap: 2rem;">
+
+                <div class="icon-btn">
+                    <!-- <a href="index.php"> <i class="fa-solid fa-house" style="color: #2d4d86;"></i></a> -->
+                    <a href="../index.php"> <i class="fa-solid fa-store" style="color: #2f5393;"></i></i></a>
+                    <!-- <a href="teacher_logout.php"> <i class="fa-solid fa-power-off" style="color: #2f5393;"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </navbar>
+
+<a class="li-lo" href="admin/admin_login.php"><i class="fa-solid fa-user-shield"></i> تسجيل دخول الإدارة</a>
+<a class="li-lo" href="teacher/teacher_login.php"><i class="fa-solid fa-chalkboard-teacher"></i> تسجيل دخول المعلمين</a>
+<a class="li-lo" href="student/points.php"><i class="fa-solid fa-user-graduate"></i> تسجيل دخول الطلاب</a>
+
+
+</body>
+</html>

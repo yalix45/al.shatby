@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+
+* {
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #5ba3ac10;
+}
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 9vh;
+    padding: 0.6rem;
+    box-shadow: 1px 9px 11px rgba(0, 0, 0, 0.1);
+    border-bottom: solid 1px #5ba3ac;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.icon-nav{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    justify-content: space-between;
+    width: 100%;
+}
+.icon-nav .icon-btn{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.icon-nav .icon-btn i{
+    font-size: 1.2rem;
+}
+.icon-nav .icon-btn-order a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    background: #2f5393;
+    padding: 0.7rem;
+    border-radius: 10px;
+    gap: 5px;
+}
+.icon-nav .icon-btn-order i{
+    font-size: 1.2rem;
+}
+.icon-nav .icon-btn-order p{
+    font-size: 1.5vw;
+    color: #fff;
+}
+.navbar .nav-img{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+header{
+    /* background-color: #2d4d86; */
+    height: auto;
+    /* width: 25vw; */
+    border-left: solid 1px #5ba3ac;
+    box-shadow: 1px 9px 11px rgba(0, 0, 0, 0.1);
+}
+
+content{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    width: 75vw;
+    padding: 1rem;
+}
+
+
+.tab-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    gap: 10%;
+    background-color: #1abc9c0c;
+    color: #2d4d86;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.tab-button.active {
+    background-color: #5ba3ac;
+    color: white;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.dow-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* تأثير عند التمرير */
+.tab-button:hover {
+    background-color: #34495e;
+    color: #ecf0f1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* الزر النشط */
+.tab-button.active {
+    background-color: #1abc9c;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/* تنسيق المساحة بين الأزرار */
+.dow-page + .dow-page {
+    margin-top: 10px;
+}
+
+
+.top-header-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0; /* تأكد من المسافة من الأعلى */
+    height: 100vh; /* تأكد أن الشريط الجانبي يغطي كامل ارتفاع الصفحة */
+    overflow-y: auto; /* لتجنب مشكلة التمرير داخل الشريط الجانبي */
+    z-index: 10; /* لضمان أنه في مقدمة العناصر الأخرى */
+}
+/* a{
+    width: 100%;
+    text-decoration: none;
+} */

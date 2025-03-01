@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+
+* {
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #5ba3ac10;
+}
+.btn{
+    text-decoration: none;
+    width: calc((75vw / 3) - 4vw);
+    height: calc((85vh / 3));
+    border: 3px solid #1c646ece;
+    border-radius: 10px;
+    padding: 0.8rem;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.btn1{
+    text-decoration: none;
+    width: calc((75vw / 3) - 4vw);
+    height: calc((85vh / 3));
+    border: 3px solid #1c646ece;
+    border-radius: 10px;
+    padding: 0.8rem;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 16px 9px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.btn1:hover{
+    transform: scale(1.1);
+}
+.btn-content{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #1c646ece;
+}
+.card-img i{
+    font-size: 5rem;
+}
